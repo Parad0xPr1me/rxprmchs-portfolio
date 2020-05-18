@@ -59,7 +59,7 @@ main{
 .about-header{
   writing-mode: vertical-rl;
   text-orientation: upright;
-  letter-spacing: 1.5rem;
+  letter-spacing: 1.3rem;
   font-size: 20px;
 }
 
@@ -169,6 +169,7 @@ footer{
 
 
 @media (max-width: 575.98px){
+
   .welcome-header {
     font-size: 90px;
   }
@@ -178,7 +179,8 @@ footer{
     transform: translate(0, -70px);
   }
   #about-section{
-    height:100%;
+    height:auto!important;
+    min-height:100vh;
     display: flex;
   }
   .about-content{
@@ -188,12 +190,12 @@ footer{
   .about-content__title{
     font-size: 22px;
     width: 240px;
-    text-align: left;
+    text-align: center;
   }
   .about-content__message{
     font-size: 16px;
     width: 240px;
-    text-align: center;
+    text-align: left;
   }
   
   .about-image__content{
