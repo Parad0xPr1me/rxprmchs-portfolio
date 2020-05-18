@@ -56,14 +56,14 @@ main{
   align-items: center;
 }
 
-#about-header{
+.about-header{
   writing-mode: vertical-rl;
   text-orientation: upright;
   letter-spacing: 1.5rem;
   font-size: 20px;
 }
 
-#about-content{
+.about-content{
   max-width: 40%;
   height: auto;
   border-left: 8px solid #313131;
@@ -87,7 +87,7 @@ main{
 
 .about-image{
   box-shadow: 12px 12px 2px 1px rgba(49, 49, 49, .3);
-  margin: auto 40px;
+  margin-left: 100px;
 }
 
 .about-image__content{
@@ -168,32 +168,34 @@ footer{
 }
 
 
-@media (max-width: 470px){
-  #welcome-header {
-    font-size: 80px;
+@media (max-width: 575.98px){
+  .welcome-header {
+    font-size: 90px;
   }
-  #welcome-subheader{
+  .welcome-subheader{
     font-size: 16px;
     letter-spacing: 1rem;
     transform: translate(0, -70px);
   }
   #about-section{
     height:100%;
+    display: flex;
   }
-  #about-content{
+  .about-content{
     width: 100%;
   }
-  #about-content__title{
+  .about-content__title{
     font-size: 22px;
-    width: 200px;
+    width: 240px;
     text-align: left;
   }
-  #about-content__message{
+  .about-content__message{
     font-size: 16px;
-    width: 240px;
+    width: 210px;
+    text-align: center;
   }
   
-  #about-image__content{
-      display: none;
+  .about-image__content{
+    display: none;
   }
 }
